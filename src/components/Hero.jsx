@@ -2,7 +2,6 @@ import React from 'react'
 import { styles } from '../styles'
 import Computers from './canvas/Computers'
 import { motion } from "framer-motion";
-
 const Hero = () => {
 	return (
 		<section className='relative w-full h-screen mx-auto'>
@@ -13,7 +12,6 @@ const Hero = () => {
 					<div className='w-5 h-5 rounded-full bg-[#915EFF]' />
 					<div className='w-1 sm:h-80 h-40 violet-gradient' />
 				</div>
-
 				<div>
 					<h1 className={`${styles.heroHeadText} text-white`}>
 						Hi, I'm <span className='text-[#915EFF]'>Rayat</span>
@@ -23,8 +21,8 @@ const Hero = () => {
 						interfaces and web applications
 					</p>
 				</div>
-			</div>
 
+			</div>
 			<Computers />
 			<div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
 				<a href='#about'>

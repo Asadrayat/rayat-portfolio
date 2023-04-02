@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -38,8 +38,8 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
 	return (
 		<>
-			<div className="grid grid-cols-3 gap-10">
-				<div className="col-span-2">
+			<div className="grid lg:grid-cols-3 gap-10">
+				<div className="lg:col-span-2">
 					<motion.div variants={textVariant()}>
 						<p className={styles.sectionSubText}>Introduction</p>
 						<h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -55,6 +55,17 @@ const About = () => {
 						create efficient, scalable, and user-friendly solutions that solve
 						real-world problems. Let's work together to bring your ideas to life!
 					</motion.p>
+					<div>
+						<a href="/resume (2).pdf" download="resume.pdf"><button
+							className='bg-tertiary my-5 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+						>Get Resume</button></a>
+
+						<div className='flex gap-5 mt-2 justify-start'>
+							<a href='https://www.facebook.com/AsadMohammadRayat/' target="_blank" className='text-5xl font-bold mb-10'  ><AiOutlineFacebook /></a>
+							<a target="_blank" className='text-5xl font-bold mb-10' href='https://www.linkedin.com/in/asad-rayat/'><div ><AiOutlineLinkedin></AiOutlineLinkedin></div></a>
+							<a target="_blank" className='text-5xl font-bold mb-10' href='https://www.instagram.com/asad_rayat/'><div ><AiOutlineInstagram></AiOutlineInstagram></div></a>
+						</div>
+					</div>
 				</div>
 
 				<Tilt className='w-full'>

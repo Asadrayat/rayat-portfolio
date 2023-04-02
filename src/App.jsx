@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import About from './components/About';
-import Stars from './components/canvas/Stars';
 import Contact from './components/Contact';
-import Feedbacks from './components/Feedbacks';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Tech from './components/Tech';
-import Works from './components/Works';
+import Work from './components/Work';
 
 
 
@@ -21,7 +19,7 @@ const App = () => {
 				</div>
 				<About />
 				<Tech />
-				<Works />
+				<Work />
 				<div className='relative z-0'>
 					<Contact />
 				</div>
